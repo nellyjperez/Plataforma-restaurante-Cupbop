@@ -11,7 +11,7 @@
     crossorigin="anonymous"></script>
 <body>
 	<!-- SideBar -->
-	<div class="menuContainer"></div>
+	<div class="menuNavBar"></div>
 
 
 	<!-- Content page-->
@@ -19,7 +19,7 @@
 
 		
 		<!-- NavBar -->
-		<div class="menuContainer2"></div>
+		<div class="menuTopBar"></div>
 
 
 
@@ -27,82 +27,14 @@
 		
 	</section>
 
-	<!-- Notifications area -->
-	asdasd
-	<section class="full-box Notifications-area">
-		<div class="full-box Notifications-bg btn-Notifications-area"></div>
-		<div class="full-box Notifications-body">
-			<div class="Notifications-body-title text-titles text-center">
-				Notifications <i class="zmdi zmdi-close btn-Notifications-area"></i>
-			</div>
-			<div class="list-group">
-			  	<div class="list-group-item">
-				    <div class="row-action-primary">
-				      	<i class="zmdi zmdi-alert-triangle"></i>
-				    </div>
-				    <div class="row-content">
-				      	<div class="least-content">17m</div>
-				      	<h4 class="list-group-item-heading">Tile with a label</h4>
-				      	<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus.</p>
-				    </div>
-			  	</div>
-			  	<div class="list-group-separator"></div>
-			  	<div class="list-group-item">
-				    <div class="row-action-primary">
-				      	<i class="zmdi zmdi-alert-octagon"></i>
-				    </div>
-				    <div class="row-content">
-				      	<div class="least-content">15m</div>
-				      	<h4 class="list-group-item-heading">Tile with a label</h4>
-				      	<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus.</p>
-				    </div>
-			  	</div>
-			  	<div class="list-group-separator"></div>
-				<div class="list-group-item">
-				    <div class="row-action-primary">
-				      	<i class="zmdi zmdi-help"></i>
-				    </div>
-				    <div class="row-content">
-				      	<div class="least-content">10m</div>
-				      	<h4 class="list-group-item-heading">Tile with a label</h4>
-				      	<p class="list-group-item-text">Maecenas sed diam eget risus varius blandit.</p>
-				    </div>
-				</div>
-			  	<div class="list-group-separator"></div>
-			  	<div class="list-group-item">
-				    <div class="row-action-primary">
-				      	<i class="zmdi zmdi-info"></i>
-				    </div>
-				    <div class="row-content">
-				      	<div class="least-content">8m</div>
-				      	<h4 class="list-group-item-heading">Tile with a label</h4>
-				      	<p class="list-group-item-text">Maecenas sed diam eget risus varius blandit.</p>
-				    </div>
-			  	</div>
-			</div>
+	<!-- Notifications area // Menu derecho-->
+		<div class="notificationRight"></div>
 
-		</div>
-	</section>
 
 	<!-- Dialog help -->
-	<div class="modal fade" tabindex="-1" role="dialog" id="Dialog-Help">
-	  	<div class="modal-dialog" role="document">
-		    <div class="modal-content">
-			    <div class="modal-header">
-			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			    	<h4 class="modal-title">Help</h4>
-			    </div>
-			    <div class="modal-body">
-			        <p>
-			        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt beatae esse velit ipsa sunt incidunt aut voluptas, nihil reiciendis maiores eaque hic vitae saepe voluptatibus. Ratione veritatis a unde autem!
-			        </p>
-			    </div>
-		      	<div class="modal-footer">
-		        	<button type="button" class="btn btn-primary btn-raised" data-dismiss="modal"><i class="zmdi zmdi-thumb-up"></i> Ok</button>
-		      	</div>
-		    </div>
-	  	</div>
-	</div>
+		<div class="menuBotonAyuda"></div>
+
+
 	<!--====== Scripts -->
 	<script src="./js/jquery-3.1.1.min.js"></script>
 	<script src="./js/sweetalert2.min.js"></script>
@@ -111,18 +43,29 @@
 	<script src="./js/ripples.min.js"></script>
 	<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="./js/main.js"></script>
-	<script>
+<!-- 	<script>
 		$.material.init();
+	</script> -->
+	<script>
+    $(document).ready(function () {
+      $('.menuNavBar').load('./sections/menunavbar.html');
+    });
+  </script>
+	<script>
+    $(document).ready(function () {
+      $('.menuTopBar').load('./sections/menutopbar.html');
+    });
+  </script>
+	<script>
+    $(document).ready(function () {
+      $('.notificationRight').load('./sections/notificationright.html');
+    });
 	</script>
 	<script>
     $(document).ready(function () {
-      $('.menuContainer').load('./sections/menunavbar.html');
+      $('.menuBotonAyuda').load('./sections/menubotonayuda.html');
     });
-  </script>
-	<script>
-    $(document).ready(function () {
-      $('.menuContainer2').load('./sections/menutopbar.html');
-    });
-  </script>
+		</script>
+  
 </body>
 </html>
