@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Restaurant</title>
+	<title>CUPBOP</title>
 
 	<!-- Normalize V8.0.1 -->
 	<link rel="stylesheet" href="./css/normalize.css">
@@ -27,7 +27,7 @@
 	<header class="header full-box">
 	    <div class="header-brand text-center full-box">
 	        <a href="index.html">
-	            <img src="./assets/img/logo.png" alt="logo" class="img-fluid">
+	            <img src="./assets/img/logo.jpeg" alt="logo" class="img-fluid">
 	        </a>
 	    </div>
 
@@ -90,136 +90,105 @@
 	<!-- Content -->
 	<div class="container container-web-page">
 	    <h3 class="font-weight-bold poppins-regular text-uppercase">Menú de platillos</h3>
-	    <p class="text-justify">Bienvenido al menú de platillos, acá encontrara todos los platillos disponibles en el restaurante. Puede ordenar los platillos por categoría en el botón "<i class="fas fa-hamburger fa-fw"></i> MENÚ" y también ordenarlos por orden alfabético o por precio en el botón "<i class="fas fa-sort-alpha-down fa-fw"></i> ORDENAR POR". Además, puede buscar platillos por nombre haciendo clic en el botón "<i class="fas fa-search fa-fw"></i> &nbsp; BUSCAR"</p>
+	    <p class="text-justify">Bienvenido al menú de platillos, acá encontrara todos los platillos disponibles en el restaurante.  </i>  &nbsp; </p>
 
-	    <div class="container-fluid" style="border-top: 1px solid #E1E1E1; padding: 20px; 0">
-	        <div class="row align-items-center">
-	            <div class="col-12 col-sm-4 text-center text-sm-start">
-	                <div class="dropdown">
-	                    <button class="btn btn-link dropdown-toggle" type="button" id="categorySubMenu" data-mdb-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	                        <i class="fas fa-hamburger fa-fw"></i> &nbsp; Menú
-	                    </button>
-	                    <div class="dropdown-menu" aria-labelledby="categorySubMenu">
-	                        <a class="dropdown-item" href="#">Menú 1</a>
-	                        <a class="dropdown-item" href="#">Menú 2</a>
-	                        <a class="dropdown-item" href="#">Menú 3</a>
-	                    </div>
-	                </div>
-	            </div>
-	            <div class="col-12 col-sm-4 text-center">
-	                <button type="button" class="btn btn-link" data-mdb-toggle="modal" data-mdb-target="#saucerModal">
-	                    <i class="fas fa-search fa-fw"></i> &nbsp; Buscar
-	                </button>
-	            </div>
-	            <div class="col-12 col-sm-4 text-center text-sm-end">
-	                <div class="dropdown">
-	                    <button class="btn btn-link dropdown-toggle" type="button" id="OrderSubMenu" data-mdb-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	                        <i class="fas fa-sort-alpha-down fa-fw"></i> &nbsp; Ordenar por
-	                    </button>
-	                    <div class="dropdown-menu" aria-labelledby="OrderSubMenu">
-	                        <a class="dropdown-item" href="#">Ascendente (A-Z)</a>
-	                        <a class="dropdown-item" href="#">Descendente (Z-A)</a>
-	                        <a class="dropdown-item" href="#">Precio (Menor a Mayor)</a>
-	                        <a class="dropdown-item" href="#">Precio (Mayor a Menor)</a>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
+	    
 
 
-	    <div class="container-fluid" style="padding: 20px 0;">
-	        <div class="row">
-	            <div class="col-12 col-md-8">
-	                <p class="text-left lead"><i class="fas fa-search fa-fw"></i> &nbsp; Resultados de la búsqueda: <span class="font-weight-bold poppins-regular text-uppercase">Platillo</span></p>
-	            </div>
-	            <div class="col-12 col-md-4">
-	                <button type="button" class="btn btn-danger">
-	                    <i class="fas fa-times fa-fw"></i> &nbsp; Eliminar busqueda
-	                </button>
-	            </div>
-	        </div>
-	    </div>
+	
 
 
 	    <div class="container-cards full-box" style="padding-bottom: 40px;">
 
 	        <div class="card shadow-1-strong">
-	            <img class="card-img-top" src="./assets/platillos/platillo.jpg" alt="nombre_platillo">
+	            <img class="card-img-top" src="./assets/img/img1.jpg" alt="nombre_platillo">
 	            <div class="card-body text-center">
-	                <h5 class="card-title font-weight-bold">Nombre o titulo del platillo</h5>
-	                <p class="card-text lead"><span class="badge bg-secondary">$25.00 USD</span></p>
+	                <h5 class="card-title font-weight-bold">BIBIMBAP</h5>
+	                <p class="card-text lead"><span class="badge bg-secondary">$35.000 COP</span></p>
 	            </div>
 	            <div class="card-body text-center">
 	                <button type="button" class="btn btn-success btn-sm"><i class="fas fa-shopping-bag fa-fw"></i> &nbsp; Agregar</button>
 	                &nbsp; &nbsp;
-	                <a href="details.html" class="btn btn-info btn-sm"><i class="fas fa-utensils fa-fw"></i> &nbsp; Detalles</a>
+					<button type="button" class="btn btn-info btn-sm" data-mdb-toggle="modal" data-mdb-target="#saucerModal">
+	                    <i class="fas fa-utensils fa-fw"></i> &nbsp; Detalles
+	                </button>
+	                
 	            </div>
 	        </div>
 
 	        <div class="card shadow-1-strong">
-	            <img class="card-img-top" src="./assets/img/img_not_found.jpg" alt="nombre_platillo">
+	            <img class="card-img-top" src="./assets/img/kimchi.jpg" alt="nombre_platillo">
 	            <div class="card-body text-center">
-	                <h5 class="card-title font-weight-bold">Nombre o titulo del platillo</h5>
-	                <p class="card-text lead"><span class="badge bg-secondary">$25.00 USD</span></p>
+	                <h5 class="card-title font-weight-bold">KIMCHIK</h5>
+	                <p class="card-text lead"><span class="badge bg-secondary">$25.000 COP</span></p>
 	            </div>
 	            <div class="card-body text-center">
 	                <button type="button" class="btn btn-success btn-sm"><i class="fas fa-shopping-bag fa-fw"></i> &nbsp; Agregar</button>
 	                &nbsp; &nbsp;
-	                <a href="details.html" class="btn btn-info btn-sm"><i class="fas fa-utensils fa-fw"></i> &nbsp; Detalles</a>
-	            </div>
+					<button type="button" class="btn btn-info btn-sm" data-mdb-toggle="modal" data-mdb-target="#saucerModal2">
+	                    <i class="fas fa-utensils fa-fw"></i> &nbsp; Detalles
+	                </button>
+	                 </div>
 	        </div>
 
 	        <div class="card shadow-1-strong">
-	            <img class="card-img-top" src="./assets/platillos/platillo.jpg" alt="nombre_platillo">
+	            <img class="card-img-top" src="./assets/img/samgyeopsal.jpg" alt="nombre_platillo">
 	            <div class="card-body text-center">
-	                <h5 class="card-title font-weight-bold">Nombre o titulo del platillo</h5>
-	                <p class="card-text lead"><span class="badge bg-secondary">$25.00 USD</span></p>
+	                <h5 class="card-title font-weight-bold">SAMGYEOPSAL</h5>
+	                <p class="card-text lead"><span class="badge bg-secondary">$33.000 COP</span></p>
 	            </div>
 	            <div class="card-body text-center">
 	                <button type="button" class="btn btn-success btn-sm"><i class="fas fa-shopping-bag fa-fw"></i> &nbsp; Agregar</button>
 	                &nbsp; &nbsp;
-	                <a href="details.html" class="btn btn-info btn-sm"><i class="fas fa-utensils fa-fw"></i> &nbsp; Detalles</a>
-	            </div>
+					<button type="button" class="btn btn-info btn-sm" data-mdb-toggle="modal" data-mdb-target="#saucerModal3">
+	                    <i class="fas fa-utensils fa-fw"></i> &nbsp; Detalles
+	                </button>
+	                </div>
 	        </div>
 
 	        <div class="card shadow-1-strong">
-	            <img class="card-img-top" src="./assets/platillos/platillo.jpg" alt="nombre_platillo">
+	            <img class="card-img-top" src="./assets/img/japchae.jpg" alt="nombre_platillo">
 	            <div class="card-body text-center">
-	                <h5 class="card-title font-weight-bold">Nombre o titulo del platillo</h5>
-	                <p class="card-text lead"><span class="badge bg-secondary">$25.00 USD</span></p>
+	                <h5 class="card-title font-weight-bold">JAPCHAE</h5>
+	                <p class="card-text lead"><span class="badge bg-secondary">$15.000 COP</span></p>
 	            </div>
 	            <div class="card-body text-center">
 	                <button type="button" class="btn btn-success btn-sm"><i class="fas fa-shopping-bag fa-fw"></i> &nbsp; Agregar</button>
 	                &nbsp; &nbsp;
-	                <a href="details.html" class="btn btn-info btn-sm"><i class="fas fa-utensils fa-fw"></i> &nbsp; Detalles</a>
-	            </div>
+					<button type="button" class="btn btn-info btn-sm" data-mdb-toggle="modal" data-mdb-target="#saucerModal4">
+	                    <i class="fas fa-utensils fa-fw"></i> &nbsp; Detalles
+	                </button>    
+				</div>
 	        </div>
 
 	        <div class="card shadow-1-strong">
-	            <img class="card-img-top" src="./assets/img/img_not_found.jpg" alt="nombre_platillo">
+	            <img class="card-img-top" src="./assets/img/img6.jpg" alt="nombre_platillo">
 	            <div class="card-body text-center">
-	                <h5 class="card-title font-weight-bold">Nombre o titulo del platillo</h5>
-	                <p class="card-text lead"><span class="badge bg-secondary">$25.00 USD</span></p>
+	                <h5 class="card-title font-weight-bold">B.B. Bap</h5>
+	                <p class="card-text lead"><span class="badge bg-secondary">$45.000 COP</span></p>
 	            </div>
 	            <div class="card-body text-center">
 	                <button type="button" class="btn btn-success btn-sm"><i class="fas fa-shopping-bag fa-fw"></i> &nbsp; Agregar</button>
 	                &nbsp; &nbsp;
-	                <a href="details.html" class="btn btn-info btn-sm"><i class="fas fa-utensils fa-fw"></i> &nbsp; Detalles</a>
-	            </div>
+					<button type="button" class="btn btn-info btn-sm" data-mdb-toggle="modal" data-mdb-target="#saucerModal5">
+	                    <i class="fas fa-utensils fa-fw"></i> &nbsp; Detalles
+	                </button>      
+				</div>
 	        </div>
 
 	        <div class="card shadow-1-strong">
-	            <img class="card-img-top" src="./assets/platillos/platillo.jpg" alt="nombre_platillo">
+	            <img class="card-img-top" src="./assets/img/ramen.jpg" alt="nombre_platillo">
 	            <div class="card-body text-center">
-	                <h5 class="card-title font-weight-bold">Nombre o titulo del platillo</h5>
-	                <p class="card-text lead"><span class="badge bg-secondary">$25.00 USD</span></p>
+	                <h5 class="card-title font-weight-bold">Ramen</h5>
+	                <p class="card-text lead"><span class="badge bg-secondary">$18.000 COP</span></p>
 	            </div>
 	            <div class="card-body text-center">
 	                <button type="button" class="btn btn-success btn-sm"><i class="fas fa-shopping-bag fa-fw"></i> &nbsp; Agregar</button>
 	                &nbsp; &nbsp;
-	                <a href="details.html" class="btn btn-info btn-sm"><i class="fas fa-utensils fa-fw"></i> &nbsp; Detalles</a>
-	            </div>
+					<button type="button" class="btn btn-info btn-sm" data-mdb-toggle="modal" data-mdb-target="#saucerModal6">
+	                    <i class="fas fa-utensils fa-fw"></i> &nbsp; Detalles
+	                </button>     
+				</div>
 	        </div>
 
 	    </div>
@@ -252,45 +221,178 @@
 	    <div class="modal-dialog" role="document">
 	        <div class="modal-content">
 	            <div class="modal-header">
-	                <h5 class="modal-title" id="saucerModalLabel">Buscar platillo</h5>
+	                <h5 class="modal-title" id="saucerModalLabel">BIBIMBAP: EL FAMOSO ARROZ COREANO </h5>
 	                <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
 	            </div>
 	            <div class="modal-body">
 	                <div class="form-outline mb-4">
-	                    <input type="text" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{4,25}" class="form-control" name="buscar_platillo" id="buscar_platillo" maxlength="25">
-	                    <label for="buscar_platillo" class="form-label">¿Qué estás buscando?</label>
+	                    
+	                    <label for="buscar_platillo" class="form-label"><br> Bibimbap; el resultado es muy apetitoso, lleno de colores y te da la impresión de que es un plato que no podrías hacer jamás en la vida. Pero, la realidad es otra, puedes prepararlo en menos de 30 minutos.
+
+							El Bibimbap es un plato originario de Corea, es una mezcla de arroz blanco, huevo, vegetales y carne picada. Ojo, que hay versiones de esta receta que no usan arroz, así que si no quieres ponerle, pues adelante.
+							</label>
 	                </div>
 	            </div>
 	            <div class="modal-footer">
 	                <button type="button" class="btn btn-danger" data-mdb-dismiss="modal"><i class="fas fa-times fa-fw"></i> &nbsp; Cerrar</button>
-	                <button type="button" class="btn btn-info"><i class="fas fa-search fa-fw"></i> &nbsp; Buscar</button>
+	                <button type="button" class="btn btn-info"></i> &nbsp; Comentar</button>
 	            </div>
 	        </div>
 	    </div>
 	</div>
 
 
+
+    <!-- Modal  2 dos-->
+	<div class="modal fade" id="saucerModal2" tabindex="-1" aria-hidden="true" aria-labelledby="saucerModalLabel" aria-hidden="true">
+	    <div class="modal-dialog" role="document">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <h5 class="modal-title" id="saucerModalLabel">Kimchi </h5>
+	                <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+	            </div>
+	            <div class="modal-body">
+	                <div class="form-outline mb-4">
+	                    
+	                    <label for="buscar_platillo" class="form-label"><br> 
+
+							Si hay una receta conocida de Corea, esa es el kimchi, que consiste en diferentes vegetales fermentados y sazonados con especias que le dan un toque intenso y picante. Hay muchas variedades y se utiliza como entrante, aperitivo o como un ingrediente más en otras comidas más contundentes. Raro es el restaurante de este país que no sirva un pequeño adelanto a modo de snack antes de los platos principales. Además, fue catalogado por la Unesco como Patrimonio Cultural Inmaterial de la Humanidad de Corea del Sur y del Norte.
+							</label>
+	                </div>
+	            </div>
+	            <div class="modal-footer">
+	                <button type="button" class="btn btn-danger" data-mdb-dismiss="modal"><i class="fas fa-times fa-fw"></i> &nbsp; Cerrar</button>
+	                <button type="button" class="btn btn-info"></i> &nbsp; Comentar</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+
+	 
+    <!-- Modal  3 tres-->
+	<div class="modal fade" id="saucerModal3" tabindex="-1" aria-hidden="true" aria-labelledby="saucerModalLabel" aria-hidden="true">
+	    <div class="modal-dialog" role="document">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <h5 class="modal-title" id="saucerModalLabel">Samgyeopsal </h5>
+	                <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+	            </div>
+	            <div class="modal-body">
+	                <div class="form-outline mb-4">
+	                    
+	                    <label for="buscar_platillo" class="form-label"><br> 
+
+							La carne de cerdo y las barbacoas o parrilladas coreanas son un clásico del país, donde la panceta nunca falta. A esto se le conoce como samgyeopsal y consiste, básicamente, en tiras de panceta que son cocinadas a la plancha y al momento por los propios comensales. Estas se pueden adobar o marinar con ginseng, vino o hierbas varias y se acompañan con vegetales como la lechuga, el rábano o el ya célebre kimchi. Por ejemplo, usar una hoja de lechuga o perilla para envolver la carne con verduras y un poco de ssamjang -una pasta hecha con soja fermentada, chili picante y otras especias- es algo muy típico, sobre todo en las ocasiones especiales.	
+						</label>
+	                </div>
+	            </div>
+	            <div class="modal-footer">
+	                <button type="button" class="btn btn-danger" data-mdb-dismiss="modal"><i class="fas fa-times fa-fw"></i> &nbsp; Cerrar</button>
+	                <button type="button" class="btn btn-info"></i> &nbsp; Comentar</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+     
+
+	<!-- Modal  4 cuatro-->
+	<div class="modal fade" id="saucerModal4" tabindex="-1" aria-hidden="true" aria-labelledby="saucerModalLabel" aria-hidden="true">
+	    <div class="modal-dialog" role="document">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <h5 class="modal-title" id="saucerModalLabel">Japchae </h5>
+	                <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+	            </div>
+	            <div class="modal-body">
+	                <div class="form-outline mb-4">
+	                    
+	                    <label for="buscar_platillo" class="form-label"><br> 
+
+							Usando fideos de cristal se crea un plato muy similar al arroz o los tallarines fritos de otras gastronomías asiáticas. Estos se mezclan con verduras y se saltean con aceite de sésamo y salsa de soja para que se empapen de sabor. Lucen un aspecto trasparente y brillante, dando lugar a un plato muy recurrente en las ocasiones especiales, como bodas y cumpleaños.	
+						</label>
+	                </div>
+	            </div>
+	            <div class="modal-footer">
+	                <button type="button" class="btn btn-danger" data-mdb-dismiss="modal"><i class="fas fa-times fa-fw"></i> &nbsp; Cerrar</button>
+	                <button type="button" class="btn btn-info"></i> &nbsp; Comentar</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+     
+	<!-- Modal  5 CINCO-->
+	<div class="modal fade" id="saucerModal5" tabindex="-1" aria-hidden="true" aria-labelledby="saucerModalLabel" aria-hidden="true">
+	    <div class="modal-dialog" role="document">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <h5 class="modal-title" id="saucerModalLabel">B.B. Bap</h5>
+	                <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+	            </div>
+	            <div class="modal-body">
+	                <div class="form-outline mb-4">
+	                    
+	                    <label for="buscar_platillo" class="form-label"><br> 
+
+							Es un plato coreano clásico de arroz, verduras salteadas, huevo frito y salsa picante. La salsa la ponen aparte, así que pueden manejar el nivel de picor. El arroz es muy rico y el picante está bien logrado. Ojo, que este plato debe revolverse entero antes de comer, dado que comer las verduras por separado merma la combinación de sabores entre ellas. 	
+						</label>
+	                </div>
+	            </div>
+	            <div class="modal-footer">
+	                <button type="button" class="btn btn-danger" data-mdb-dismiss="modal"><i class="fas fa-times fa-fw"></i> &nbsp; Cerrar</button>
+	                <button type="button" class="btn btn-info"></i> &nbsp; Comentar</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+
+		<!-- Modal  6 sexto-->
+		<div class="modal fade" id="saucerModal6" tabindex="-1" aria-hidden="true" aria-labelledby="saucerModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="saucerModalLabel">Ramen</h5>
+						<button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="form-outline mb-4">
+							
+							<label for="buscar_platillo" class="form-label"><br> 
+	
+								Sopa picante con tallarines y huevo. Es un clásico ramen coreano, no es en exceso picante, por lo que pude tomar toda la sopa sin morir en el intento. Es perfecto para estos días fríos de invierno y calentar un poco el día.	
+							</label>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-mdb-dismiss="modal"><i class="fas fa-times fa-fw"></i> &nbsp; Cerrar</button>
+						<button type="button" class="btn btn-info"></i> &nbsp; Comentar</button>
+					</div>
+				</div>
+			</div>
+		</div>
 	<!-- Footer -->
 	<footer class="footer">
 	    <div class="container">
 	        <div class="row">
 	            <div class="col-12 col-md-4">
 	                <ul class="list-unstyled" >
-	                    <li><h5 class="font-weight-bold" ><i class="far fa-copyright"></i> Carlos Alfaro 2021</h5></li>
+	                    <li><h5 class="font-weight-bold" ><i class="far fa-copyright"></i> MISION TIC</h5></li>
 	                    <li> Todos los derechos reservados </li>
 	                </ul>
 	            </div>
 	            <div class="col-12 col-md-4">
 	                <ul class="list-unstyled" >
-	                    <li><h5 class="font-weight-bold" >El Salvador</h5></li>
-	                    <li><i class="fas fa-map-marker-alt fa-fw"></i> San Salvador, El Salvador, Centro América</li>
+	                    <li><h5 class="font-weight-bold" >COLOMBIA</h5></li>
+	                    <li><i class="fas fa-map-marker-alt fa-fw"></i> Sur América</li>
 	                </ul>
 	            </div>
 	            <div class="col-12 col-md-4">
 	                <ul class="list-unstyled" >
 	                    <li><h5 class="font-weight-bold" >Siguenos en:</h5> </li>
 	                    <li>
-	                        <a href="https://es-la.facebook.com/CarlosAlfaroES/" class="footer-link" target="_blank" >
+	                        <a href="https://www.facebook.com/groups/Grupo.oficial.MisionTIC2022" class="footer-link" target="_blank" >
 	                            <i class="fab fa-facebook fa-fw"></i> Facebook
 	                        </a>
 	                    </li>
