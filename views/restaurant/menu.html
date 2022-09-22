@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>CUPBOP</title>
+
+	<!-- Normalize V8.0.1 -->
+	<link rel="stylesheet" href="./css/normalize.css">
+
+	<!-- MDBootstrap V5 -->
+	<link rel="stylesheet" href="./css/mdb.min.css">
+
+	<!-- Font Awesome V5.15.1 -->
+	<link rel="stylesheet" href="./css/all.css">
+
+	<!-- Sweet Alert V10.13.0 -->
+	<script src="./js/sweetalert2.js" ></script>
+
+	<!-- General Styles -->
+	<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+	<!-- Header -->
+	<header class="header full-box">
+	    <div class="header-brand text-center full-box">
+	        <a href="index.html">
+	            <img src="./assets/img/logo.jpeg" alt="logo" class="img-fluid">
+	        </a>
+	    </div>
+
+	    <div class="header-options full-box">
+	        <nav class="header-navbar full-box poppins-regular font-weight-bold" >
+	            <ul class="list-unstyled full-box">
+	                <li>
+	                    <a href="index.html" >Inicio<span class="full-box" ></span></a>
+	                </li>
+	                <li>
+	                    <a href="menu.html" >Menú<span class="full-box" ></span></a>
+	                </li>
+	            </ul>
+	        </nav>
+	        <div class="header-button full-box text-center btn-login-menu" >
+	            <i class="fas fa-user-alt" onclick="show_popup_login()" data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="Login" ></i>
+	            <div class="div-bordered popup-login">
+
+	                <!-- Inicio de sesion -->
+	                <span class="text-center poppins-regular font-weight-bold">Inicio de sesión</span>
+	                <form class="full-box" action="">
+	                    <div class="form-outline mb-4">
+	                        <input type="email" class="form-control" name="login_email_cliente" id="login_email" maxlength="70" required="" placeholder="Email" >
+	                    </div>
+	                    <div class="form-outline mb-4">
+	                        <input type="password" class="form-control" name="login_clave_cliente" id="login_password" pattern="[a-zA-Z0-9$@.-]{7,100}" maxlength="100" required="" placeholder="Contraseña" >
+	                    </div>
+	                    <p class="text-center">
+	                        <button class="btn btn-info btn-sm w-100">Iniciar sesión</button>
+	                    </p>
+	                </form>
+	                <hr>
+	                <p class="text-center full-box">¿No tienes cuenta? <a href="registration.html">Regístrate aquí</a></p>
+
+	                <!-- Cerrar sesion --
+	                <div class="text-center full-box">
+	                    <i class="fas fa-user-circle fa-4x"></i>
+	                </div>
+	                <span class="poppins-regular font-weight-bold">Nombre de usuario</span>
+	                <div class="text-center full-box">
+	                    <a href="#" class="btn btn-info btn-sm w-100"><i class="fas fa-user-cog fa-fw"></i> &nbsp; Mi cuenta</a>
+	                </div>
+	                <div class="text-center full-box">
+	                    <a href="#" class="btn btn-info btn-sm w-100"><i class="fab fa-dashcube fa-fw"></i> &nbsp; Dashboard</a>
+	                </div>
+	                <form class="full-box" action="">
+	                    <button class="btn btn-raised btn-primary btn-sm w-100" ><i class="fas fa-door-open fa-fw"></i> &nbsp; Cerrar sesión</button>
+	                </form>-->
+	                
+	            </div>
+	        </div>
+	        <a href="bag.html" class="header-button full-box text-center" data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="Carrito" >
+	            <i class="fas fa-shopping-bag"></i>
+	            <span class="badge bg-warning rounded-pill bag-count" >2</span>
+	        </a>
+	    </div>
+	</header>
+
+
+	<!-- Content -->
+	<div class="container container-web-page">
+	    <h3 class="font-weight-bold poppins-regular text-uppercase">Menú de platillos</h3>
+	    <p class="text-justify">Bienvenido al menú de platillos, acá encontrara todos los platillos disponibles en el restaurante.  </i>  &nbsp; </p>
+
+	    
+
+
+	
+
+
+	    <div class="container-cards full-box" style="padding-bottom: 40px;">
+
+	        <div class="card shadow-1-strong">
+	            <img class="card-img-top" src="./assets/img/img1.jpg" alt="nombre_platillo">
+	            <div class="card-body text-center">
+	                <h5 class="card-title font-weight-bold">BIBIMBAP</h5>
+	                <p class="card-text lead"><span class="badge bg-secondary">$35.000 COP</span></p>
+	            </div>
+	            <div class="card-body text-center">
+	                <button type="button" class="btn btn-success btn-sm"><i class="fas fa-shopping-bag fa-fw"></i> &nbsp; Agregar</button>
+	                &nbsp; &nbsp;
+					<button type="button" class="btn btn-info btn-sm" data-mdb-toggle="modal" data-mdb-target="#saucerModal">
+	                    <i class="fas fa-utensils fa-fw"></i> &nbsp; Detalles
+	                </button>
+	                
+	            </div>
+	        </div>
+
+	        <div class="card shadow-1-strong">
+	            <img class="card-img-top" src="./assets/img/kimchi.jpg" alt="nombre_platillo">
+	            <div class="card-body text-center">
+	                <h5 class="card-title font-weight-bold">KIMCHIK</h5>
+	                <p class="card-text lead"><span class="badge bg-secondary">$25.000 COP</span></p>
+	            </div>
+	            <div class="card-body text-center">
+	                <button type="button" class="btn btn-success btn-sm"><i class="fas fa-shopping-bag fa-fw"></i> &nbsp; Agregar</button>
+	                &nbsp; &nbsp;
+					<button type="button" class="btn btn-info btn-sm" data-mdb-toggle="modal" data-mdb-target="#saucerModal2">
+	                    <i class="fas fa-utensils fa-fw"></i> &nbsp; Detalles
+	                </button>
+	                 </div>
+	        </div>
+
+	        <div class="card shadow-1-strong">
+	            <img class="card-img-top" src="./assets/img/samgyeopsal.jpg" alt="nombre_platillo">
+	            <div class="card-body text-center">
+	                <h5 class="card-title font-weight-bold">SAMGYEOPSAL</h5>
+	                <p class="card-text lead"><span class="badge bg-secondary">$33.000 COP</span></p>
+	            </div>
+	            <div class="card-body text-center">
+	                <button type="button" class="btn btn-success btn-sm"><i class="fas fa-shopping-bag fa-fw"></i> &nbsp; Agregar</button>
+	                &nbsp; &nbsp;
+					<button type="button" class="btn btn-info btn-sm" data-mdb-toggle="modal" data-mdb-target="#saucerModal3">
+	                    <i class="fas fa-utensils fa-fw"></i> &nbsp; Detalles
+	                </button>
+	                </div>
+	        </div>
+
+	        <div class="card shadow-1-strong">
+	            <img class="card-img-top" src="./assets/img/japchae.jpg" alt="nombre_platillo">
+	            <div class="card-body text-center">
+	                <h5 class="card-title font-weight-bold">JAPCHAE</h5>
+	                <p class="card-text lead"><span class="badge bg-secondary">$15.000 COP</span></p>
+	            </div>
+	            <div class="card-body text-center">
+	                <button type="button" class="btn btn-success btn-sm"><i class="fas fa-shopping-bag fa-fw"></i> &nbsp; Agregar</button>
+	                &nbsp; &nbsp;
+					<button type="button" class="btn btn-info btn-sm" data-mdb-toggle="modal" data-mdb-target="#saucerModal4">
+	                    <i class="fas fa-utensils fa-fw"></i> &nbsp; Detalles
+	                </button>    
+				</div>
+	        </div>
+
+	        <div class="card shadow-1-strong">
+	            <img class="card-img-top" src="./assets/img/img6.jpg" alt="nombre_platillo">
+	            <div class="card-body text-center">
+	                <h5 class="card-title font-weight-bold">B.B. Bap</h5>
+	                <p class="card-text lead"><span class="badge bg-secondary">$45.000 COP</span></p>
+	            </div>
+	            <div class="card-body text-center">
+	                <button type="button" class="btn btn-success btn-sm"><i class="fas fa-shopping-bag fa-fw"></i> &nbsp; Agregar</button>
+	                &nbsp; &nbsp;
+					<button type="button" class="btn btn-info btn-sm" data-mdb-toggle="modal" data-mdb-target="#saucerModal5">
+	                    <i class="fas fa-utensils fa-fw"></i> &nbsp; Detalles
+	                </button>      
+				</div>
+	        </div>
+
+	        <div class="card shadow-1-strong">
+	            <img class="card-img-top" src="./assets/img/ramen.jpg" alt="nombre_platillo">
+	            <div class="card-body text-center">
+	                <h5 class="card-title font-weight-bold">Ramen</h5>
+	                <p class="card-text lead"><span class="badge bg-secondary">$18.000 COP</span></p>
+	            </div>
+	            <div class="card-body text-center">
+	                <button type="button" class="btn btn-success btn-sm"><i class="fas fa-shopping-bag fa-fw"></i> &nbsp; Agregar</button>
+	                &nbsp; &nbsp;
+					<button type="button" class="btn btn-info btn-sm" data-mdb-toggle="modal" data-mdb-target="#saucerModal6">
+	                    <i class="fas fa-utensils fa-fw"></i> &nbsp; Detalles
+	                </button>     
+				</div>
+	        </div>
+
+	    </div>
+
+
+	    <nav aria-label="Page navigation example">
+	        <ul class="pagination justify-content-center">
+	            <li class="page-item">
+	                <a class="page-link" href="#">Anterior</a>
+	            </li>
+	            <li class="page-item">
+	                <a class="page-link" href="#">1</a>
+	            </li>
+	            <li class="page-item active">
+	                <a class="page-link" href="#">2</a>
+	            </li>
+	            <li class="page-item">
+	                <a class="page-link" href="#">3</a>
+	            </li>
+	            <li class="page-item">
+	                <a class="page-link" href="#">Siguiente</a>
+	            </li>
+	        </ul>
+	    </nav>
+
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="saucerModal" tabindex="-1" aria-hidden="true" aria-labelledby="saucerModalLabel" aria-hidden="true">
+	    <div class="modal-dialog" role="document">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <h5 class="modal-title" id="saucerModalLabel">BIBIMBAP: EL FAMOSO ARROZ COREANO </h5>
+	                <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+	            </div>
+	            <div class="modal-body">
+	                <div class="form-outline mb-4">
+	                    
+	                    <label for="buscar_platillo" class="form-label"><br> Bibimbap; el resultado es muy apetitoso, lleno de colores y te da la impresión de que es un plato que no podrías hacer jamás en la vida. Pero, la realidad es otra, puedes prepararlo en menos de 30 minutos.
+
+							El Bibimbap es un plato originario de Corea, es una mezcla de arroz blanco, huevo, vegetales y carne picada. Ojo, que hay versiones de esta receta que no usan arroz, así que si no quieres ponerle, pues adelante.
+							</label>
+	                </div>
+	            </div>
+	            <div class="modal-footer">
+	                <button type="button" class="btn btn-danger" data-mdb-dismiss="modal"><i class="fas fa-times fa-fw"></i> &nbsp; Cerrar</button>
+	                <button type="button" class="btn btn-info"></i> &nbsp; Comentar</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+
+
+    <!-- Modal  2 dos-->
+	<div class="modal fade" id="saucerModal2" tabindex="-1" aria-hidden="true" aria-labelledby="saucerModalLabel" aria-hidden="true">
+	    <div class="modal-dialog" role="document">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <h5 class="modal-title" id="saucerModalLabel">Kimchi </h5>
+	                <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+	            </div>
+	            <div class="modal-body">
+	                <div class="form-outline mb-4">
+	                    
+	                    <label for="buscar_platillo" class="form-label"><br> 
+
+							Si hay una receta conocida de Corea, esa es el kimchi, que consiste en diferentes vegetales fermentados y sazonados con especias que le dan un toque intenso y picante. Hay muchas variedades y se utiliza como entrante, aperitivo o como un ingrediente más en otras comidas más contundentes. Raro es el restaurante de este país que no sirva un pequeño adelanto a modo de snack antes de los platos principales. Además, fue catalogado por la Unesco como Patrimonio Cultural Inmaterial de la Humanidad de Corea del Sur y del Norte.
+							</label>
+	                </div>
+	            </div>
+	            <div class="modal-footer">
+	                <button type="button" class="btn btn-danger" data-mdb-dismiss="modal"><i class="fas fa-times fa-fw"></i> &nbsp; Cerrar</button>
+	                <button type="button" class="btn btn-info"></i> &nbsp; Comentar</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+
+	 
+    <!-- Modal  3 tres-->
+	<div class="modal fade" id="saucerModal3" tabindex="-1" aria-hidden="true" aria-labelledby="saucerModalLabel" aria-hidden="true">
+	    <div class="modal-dialog" role="document">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <h5 class="modal-title" id="saucerModalLabel">Samgyeopsal </h5>
+	                <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+	            </div>
+	            <div class="modal-body">
+	                <div class="form-outline mb-4">
+	                    
+	                    <label for="buscar_platillo" class="form-label"><br> 
+
+							La carne de cerdo y las barbacoas o parrilladas coreanas son un clásico del país, donde la panceta nunca falta. A esto se le conoce como samgyeopsal y consiste, básicamente, en tiras de panceta que son cocinadas a la plancha y al momento por los propios comensales. Estas se pueden adobar o marinar con ginseng, vino o hierbas varias y se acompañan con vegetales como la lechuga, el rábano o el ya célebre kimchi. Por ejemplo, usar una hoja de lechuga o perilla para envolver la carne con verduras y un poco de ssamjang -una pasta hecha con soja fermentada, chili picante y otras especias- es algo muy típico, sobre todo en las ocasiones especiales.	
+						</label>
+	                </div>
+	            </div>
+	            <div class="modal-footer">
+	                <button type="button" class="btn btn-danger" data-mdb-dismiss="modal"><i class="fas fa-times fa-fw"></i> &nbsp; Cerrar</button>
+	                <button type="button" class="btn btn-info"></i> &nbsp; Comentar</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+     
+
+	<!-- Modal  4 cuatro-->
+	<div class="modal fade" id="saucerModal4" tabindex="-1" aria-hidden="true" aria-labelledby="saucerModalLabel" aria-hidden="true">
+	    <div class="modal-dialog" role="document">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <h5 class="modal-title" id="saucerModalLabel">Japchae </h5>
+	                <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+	            </div>
+	            <div class="modal-body">
+	                <div class="form-outline mb-4">
+	                    
+	                    <label for="buscar_platillo" class="form-label"><br> 
+
+							Usando fideos de cristal se crea un plato muy similar al arroz o los tallarines fritos de otras gastronomías asiáticas. Estos se mezclan con verduras y se saltean con aceite de sésamo y salsa de soja para que se empapen de sabor. Lucen un aspecto trasparente y brillante, dando lugar a un plato muy recurrente en las ocasiones especiales, como bodas y cumpleaños.	
+						</label>
+	                </div>
+	            </div>
+	            <div class="modal-footer">
+	                <button type="button" class="btn btn-danger" data-mdb-dismiss="modal"><i class="fas fa-times fa-fw"></i> &nbsp; Cerrar</button>
+	                <button type="button" class="btn btn-info"></i> &nbsp; Comentar</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+     
+	<!-- Modal  5 CINCO-->
+	<div class="modal fade" id="saucerModal5" tabindex="-1" aria-hidden="true" aria-labelledby="saucerModalLabel" aria-hidden="true">
+	    <div class="modal-dialog" role="document">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <h5 class="modal-title" id="saucerModalLabel">B.B. Bap</h5>
+	                <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+	            </div>
+	            <div class="modal-body">
+	                <div class="form-outline mb-4">
+	                    
+	                    <label for="buscar_platillo" class="form-label"><br> 
+
+							Es un plato coreano clásico de arroz, verduras salteadas, huevo frito y salsa picante. La salsa la ponen aparte, así que pueden manejar el nivel de picor. El arroz es muy rico y el picante está bien logrado. Ojo, que este plato debe revolverse entero antes de comer, dado que comer las verduras por separado merma la combinación de sabores entre ellas. 	
+						</label>
+	                </div>
+	            </div>
+	            <div class="modal-footer">
+	                <button type="button" class="btn btn-danger" data-mdb-dismiss="modal"><i class="fas fa-times fa-fw"></i> &nbsp; Cerrar</button>
+	                <button type="button" class="btn btn-info"></i> &nbsp; Comentar</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+
+		<!-- Modal  6 sexto-->
+		<div class="modal fade" id="saucerModal6" tabindex="-1" aria-hidden="true" aria-labelledby="saucerModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="saucerModalLabel">Ramen</h5>
+						<button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="form-outline mb-4">
+							
+							<label for="buscar_platillo" class="form-label"><br> 
+	
+								Sopa picante con tallarines y huevo. Es un clásico ramen coreano, no es en exceso picante, por lo que pude tomar toda la sopa sin morir en el intento. Es perfecto para estos días fríos de invierno y calentar un poco el día.	
+							</label>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-mdb-dismiss="modal"><i class="fas fa-times fa-fw"></i> &nbsp; Cerrar</button>
+						<button type="button" class="btn btn-info"></i> &nbsp; Comentar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- Footer -->
+	<footer class="footer">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" ><i class="far fa-copyright"></i> MISION TIC</h5></li>
+	                    <li> Todos los derechos reservados </li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >COLOMBIA</h5></li>
+	                    <li><i class="fas fa-map-marker-alt fa-fw"></i> Sur América</li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >Siguenos en:</h5> </li>
+	                    <li>
+	                        <a href="https://www.facebook.com/groups/Grupo.oficial.MisionTIC2022" class="footer-link" target="_blank" >
+	                            <i class="fab fa-facebook fa-fw"></i> Facebook
+	                        </a>
+	                    </li>
+
+	                    <li>
+	                        <a href="https://www.youtube.com/c/CarlosAlfaro007" class="footer-link" target="_blank" >
+	                            <i class="fab fa-youtube fa-fw"></i>
+	                                Youtube
+	                        </a>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	    </div>
+	</footer>
+
+	
+	<!-- MDBootstrap V5 -->
+	<script src="./js/mdb.min.js" ></script>
+
+	<!-- General scripts -->
+	<script src="./js/main.js" ></script>
+</body>
+</html>
