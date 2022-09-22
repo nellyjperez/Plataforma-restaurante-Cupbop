@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Inicio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<body>
+	<!-- SideBar -->
+	<div class="menuNavBar"></div>
+
+
+	<!-- Content page-->
+	<section class="full-box dashboard-contentPage">
+
+		
+		<!-- NavBar -->
+		<div class="menuTopBar"></div>
+
+
+
+		<!-- Inicio contenido de la pagina --- Content page -->
+
+		<div class="container-fluid">
+			<div class="page-header">
+			  <h1 class="text-titles"><i class="zmdi zmdi-accounts-list zmdi-hc-fw"></i> Listado de platos <small></small></h1>
+			</div>
+			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse voluptas reiciendis tempora voluptatum eius porro ipsa quae voluptates officiis sapiente sunt dolorem, velit quos a qui nobis sed, dignissimos possimus!</p>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+					<ul class="nav nav-tabs" style="margin-bottom: 15px;">
+<!-- 					  	<li class="active"><a href="#new" data-toggle="tab">New</a></li>
+					  	<li><a href="#list" data-toggle="tab">List</a></li> -->
+					</ul>
+					<div id="myTabContent" class="tab-content">
+						<div class="tab-pane fade active in" id="list">
+							<div class="table-responsive">
+								<table class="table table-hover text-center">
+									<thead>
+										<tr>
+											<th class="text-center">#</th>
+											<th class="text-center">Nombre</th>
+											<th class="text-center">Categoría</th>
+											<th class="text-center">Descripcion</th>
+											<th class="text-center">Precio</th>
+											<th class="text-center">Foto</th>
+											<th class="text-center">Creado por</th>
+											<th class="text-center">Editar</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>ROCK BOP</td>
+											<td>Entrada </td>
+											<td>Pollo frito estilo koreano</td>
+											<td>$ 15.000</td>
+											<td><img src="../../images/products/B.webp" height="80px" alt=""></td>
+											<td>Hader Marin</td>
+											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-edit"></i></a></td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>COMBO BOP</td>
+											<td>Entrada </td>
+											<td>Su elección de dos proteinas</td>
+											<td>$ 15.000</td>
+											<td><img src="../../images/products/Combo.webp" height="80px" alt=""></td>
+											<td>Hader Marin</td>
+											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-edit"></i></a></td>
+										</tr>
+										<tr>
+											<td>1</td>
+											<td>ROCK BOP</td>
+											<td>Entrada </td>
+											<td>Carne estilo BBQ Koreano</td>
+											<td>$ 15.000</td>
+											<td><img src="../../images/products/Rock.webp" height="80px" alt=""></td>
+											<td>Hader Marin</td>
+											<td><a href="#!" class="btn btn-success btn-raised btn-xs"><i class="zmdi zmdi-edit"></i></a></td>
+										</tr>
+									</tbody>
+								</table>
+								<ul class="pagination pagination-sm">
+									<li class="disabled"><a href="#!">«</a></li>
+									<li class="active"><a href="#!">1</a></li>
+									<li><a href="#!">2</a></li>
+									<li><a href="#!">3</a></li>
+									<li><a href="#!">4</a></li>
+									<li><a href="#!">5</a></li>
+									<li><a href="#!">»</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+		<!-- Fin contenido de la pagina --- Content page -->
+	
+
+	<!-- Notifications area // Menu derecho-->
+		<div class="notificationRight"></div>
+
+
+	<!-- Dialog help -->
+		<div class="menuBotonAyuda"></div>
+
+
+	<!--====== Scripts -->
+	<script src="./js/jquery-3.1.1.min.js"></script>
+	<script src="./js/sweetalert2.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/material.min.js"></script>
+	<script src="./js/ripples.min.js"></script>
+	<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="./js/main.js"></script>
+<!-- 	<script>
+		$.material.init();
+	</script> -->
+	<script>
+    $(document).ready(function () {
+      $('.menuNavBar').load('./sections/menunavbar.html');
+    });
+  </script>
+	<script>
+    $(document).ready(function () {
+      $('.menuTopBar').load('./sections/menutopbar.html');
+    });
+  </script>
+	<script>
+    $(document).ready(function () {
+      $('.notificationRight').load('./sections/notificationright.html');
+    });
+	</script>
+	<script>
+    $(document).ready(function () {
+      $('.menuBotonAyuda').load('./sections/menubotonayuda.html');
+    });
+		</script>
+  
+</body>
+</html>
